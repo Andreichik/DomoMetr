@@ -26,7 +26,7 @@ namespace DomoMetr
         private void Calendar_DateChanged(object sender, DateRangeEventArgs e)
         {
             lCurDate.Text = e.Start.ToShortDateString();
-            lCurDate.Text = float.Parse(tbLight.Text.Replace('.', ',')).ToString();
+            //lCurDate.Text = float.Parse(tbLight.Text.Replace('.', ',')).ToString();
         }
 
         /// <summary>

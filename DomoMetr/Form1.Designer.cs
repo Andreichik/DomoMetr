@@ -31,6 +31,7 @@
             this.Calendar = new System.Windows.Forms.MonthCalendar();
             this.lCurDate = new System.Windows.Forms.Label();
             this.tbLight = new System.Windows.Forms.TextBox();
+            this.numericTextBox1 = new NumericTextBox.NumericTextBox(2);
             this.SuspendLayout();
             // 
             // Calendar
@@ -59,11 +60,19 @@
             this.tbLight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbLight_KeyPress);
             this.tbLight.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbLight_KeyUp);
             // 
+            // numericTextBox1
+            // 
+            this.numericTextBox1.Location = new System.Drawing.Point(198, 102);
+            this.numericTextBox1.Name = "numericTextBox1";
+            this.numericTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.numericTextBox1.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(554, 406);
+            this.Controls.Add(this.numericTextBox1);
             this.Controls.Add(this.tbLight);
             this.Controls.Add(this.lCurDate);
             this.Controls.Add(this.Calendar);
@@ -79,6 +88,7 @@
         private System.Windows.Forms.MonthCalendar Calendar;
         private System.Windows.Forms.Label lCurDate;
         private System.Windows.Forms.TextBox tbLight;
+        private NumericTextBox.NumericTextBox numericTextBox1;
     }
 }
 
