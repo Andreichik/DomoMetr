@@ -31,7 +31,7 @@
             this.Calendar = new System.Windows.Forms.MonthCalendar();
             this.lCurDate = new System.Windows.Forms.Label();
             this.tbLight = new System.Windows.Forms.TextBox();
-            this.numericTextBox1 = new NumericTextBox.NumericTextBox(2);
+            this.numericTextBox1 = new NumericTextBox.NumericTextBox();
             this.SuspendLayout();
             // 
             // Calendar

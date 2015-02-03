@@ -14,12 +14,21 @@ namespace NumericTextBox
 {
     public partial class NumericTextBox : TextBox
     {
-        private int DecimalNumbers;
-        public NumericTextBox(int decimalNumbers)
+        private int decimalNumbers;
+
+        public int DecimalNumbers
+        {
+            get { return decimalNumbers; }
+            set
+            {
+                decimalNumbers = (value < 0 || value > 10) ? 2 : value;
+            }
+        }
+        public NumericTextBox()
         {
             InitializeComponent();
 
-            DecimalNumbers = (decimalNumbers < 0 || decimalNumbers > 10) ? 2 : decimalNumbers;
+            DecimalNumbers = 2;
         }
 
         protected override void OnKeyUp(KeyEventArgs e)

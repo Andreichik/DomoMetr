@@ -21,6 +21,8 @@ namespace DomoMetr
             Calendar.MaxSelectionCount = 1;
 
             lCurDate.Text = Calendar.TodayDate.ToShortDateString();
+
+            numericTextBox1.DecimalNumbers = 3;
         }
 
         private void Calendar_DateChanged(object sender, DateRangeEventArgs e)
